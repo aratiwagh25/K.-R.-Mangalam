@@ -186,12 +186,16 @@ p, ul, .row, h1, h2, h3, h4, h5, h6 {
 }
 .header .top-header .contact-icon__call, .header .top-header .contact-icon__whatsapp, .header .top-header .contact-icon__person {
   fill: #ffffff;
+  color: transparent;
 }
 .header .top-header .contact-icon a + a {
   margin-left: 0.92rem;
 }
 .header .top-header .social-icon {
   margin-left: 1.56rem;
+}
+.header .top-header .social-icon a {
+  color: transparent;
 }
 .header .top-header .social-icon a + a {
   margin-left: 0.92rem;
@@ -462,6 +466,11 @@ p, ul, .row, h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 96, 170, 0.22);
   margin-bottom: 2.625rem;
 }
+@media (max-width: 1400px) {
+  .university__title {
+    font-size: 6rem;
+  }
+}
 @media (max-width: 991px) {
   .university__title {
     font-size: 5rem;
@@ -509,28 +518,24 @@ p, ul, .row, h1, h2, h3, h4, h5, h6 {
 .university__box--right ul {
   display: flex;
   flex-wrap: wrap;
-}
-@media (max-width: 991px) {
-  .university__box--right ul {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 }
 .university__box--right ul li {
-  margin-right: 2.2rem;
+  width: 23%;
 }
 @media (max-width: 991px) {
   .university__box--right ul li {
-    width: 23%;
+    width: 21%;
     margin-bottom: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .university__box--right ul li {
+    width: 45%;
   }
 }
 .university__box--right ul li:last-child {
   margin-right: 0;
-}
-@media (max-width: 991px) {
-  .university__box--right ul li {
-    margin-right: 0;
-  }
 }
 .university__box--right ul li img {
   width: 5.625rem;
@@ -1222,6 +1227,14 @@ p, ul, .row, h1, h2, h3, h4, h5, h6 {
 .best-campus__overlay .container {
   position: relative;
   z-index: 5;
+}
+@media (max-width: 575px) {
+  .best-campus__overlay .container a {
+    margin-top: 1.5rem;
+  }
+}
+.best-campus__overlay .container a + a {
+  margin-left: 1.25rem;
 }
 .best-campus h4 {
   font-size: 5rem;
