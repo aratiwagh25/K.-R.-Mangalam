@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- custom style link -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header class="header w-100">
+
+        <div class="top-header">
+            <ul class="list-unstyled top-header__menu">
+                <li class="top-header__menu--item">
+                    <a href="">
+                        Info For
+                    </a>
+                </li>
+                <li class="top-header__menu--item">
+                    <a href="">
+                        International
+                    </a>
+                </li>
+                <li class="top-header__menu--item">
+                    <a href="">
+                        KRMU Times
+                    </a>
+                </li>
+                <li class="top-header__menu--item">
+                    <a href="">
+                        Careers
+                    </a>
+                </li>
+                <li class="top-header__menu--item">
+                    <a href="">
+                        Contact Us
+                    </a>
+                </li>
+                <li class="top-header__menu--item">
+                    <a href="">
+                        Quick Links
+                    </a>
+                </li>
+            </ul>
+            <div class="contact-icon">
+                <a href="tel:+911234567890" class="contact-icon__call">
+                    <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.64286 1.60714C9.64286 1.31128 9.8827 1.07143 10.1786 1.07143H13.3929C13.6887 1.07143 13.9286 1.31128 13.9286 1.60714V4.82143C13.9286 5.1173 13.6887 5.35714 13.3929 5.35714C13.097 5.35714 12.8571 5.1173 12.8571 4.82143V2.90047L9.48595 6.27166C9.27674 6.48087 8.93754 6.48087 8.72834 6.27166C8.51913 6.06245 8.51913 5.72326 8.72834 5.51405L12.0995 2.14286H10.1786C9.8827 2.14286 9.64286 1.90301 9.64286 1.60714Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 2.14286C0 0.95939 0.95939 0 2.14286 0H3.12259C3.73714 0 4.27284 0.418255 4.42189 1.01446L5.21174 4.17388C5.34243 4.69664 5.1471 5.24682 4.71602 5.57013L3.792 6.26314C3.69605 6.33511 3.67519 6.44049 3.70214 6.51406C4.51322 8.7282 6.2718 10.4868 8.48594 11.2979C8.55952 11.3248 8.6649 11.3039 8.73686 11.208L9.42987 10.284C9.75318 9.8529 10.3034 9.65757 10.8261 9.78826L13.9855 10.5781C14.5817 10.7272 15 11.2629 15 11.8774V12.8571C15 14.0406 14.0406 15 12.8571 15H11.25C5.0368 15 0 9.9632 0 3.75V2.14286Z" />
+                    </svg>
+                </a>
+                <a href="" class="contact-icon__whatsapp">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.98 0C3.57622 0 0 3.57622 0 7.98C0 9.63511 0.502444 11.2607 1.47778 12.6202C1.53689 12.7089 1.53689 12.8271 1.50733 12.9158L0.266 15.694L3.07378 14.5118C3.10333 14.4822 3.16244 14.4822 3.22156 14.4822C3.28067 14.4822 3.33978 14.5118 3.39889 14.5413C4.75844 15.4576 6.32489 15.96 7.98 15.96C12.3838 15.96 15.96 12.3838 15.96 7.98C15.96 3.57622 12.3838 0 7.98 0ZM12.3247 11.4676C12.2064 11.6744 12.0882 11.8518 11.9109 11.9996C11.6449 12.2656 11.3198 12.4724 10.9356 12.5611H10.906C10.0784 12.3247 9.13267 11.8518 8.15733 11.1424C7.53667 10.6991 6.94556 10.1671 6.35444 9.576C5.76333 8.98489 5.26089 8.39378 4.788 7.77311C4.07867 6.79778 3.60578 5.852 3.36933 5.02444V4.99489C3.48756 4.64022 3.66489 4.28556 3.93089 4.01956C4.07867 3.87178 4.28556 3.724 4.46289 3.60578C4.788 3.42844 5.14267 3.33978 5.49733 3.33978C5.586 3.33978 5.64511 3.33978 5.73378 3.33978C5.76333 3.33978 5.79289 3.36933 5.79289 3.39889C5.88156 3.60578 5.94067 3.78311 6.02933 3.93089C6.23622 4.46289 6.384 4.87667 7.03422 5.61556C7.06378 5.64511 7.06378 5.67467 7.03422 5.70422C6.916 6.02933 6.73867 6.32489 6.50222 6.56133C6.44311 6.62044 6.41356 6.65 6.35444 6.67956C6.20667 6.79778 6.118 6.97511 6.118 7.15244C6.118 7.32978 6.17711 7.50711 6.29533 7.65489C6.41356 7.77311 7.15244 8.512 7.24111 8.63022C7.35933 8.74844 8.06867 9.45778 8.21644 9.576C8.33467 9.69422 8.54156 9.75333 8.71889 9.75333C8.89622 9.75333 9.07355 9.66467 9.19178 9.51689C9.22133 9.45778 9.28044 9.42822 9.33956 9.36911C9.576 9.13267 9.87156 8.95533 10.1967 8.83711C10.2262 8.83711 10.2558 8.83711 10.2853 8.83711C11.0242 9.45778 11.438 9.63511 11.97 9.842C12.1178 9.90111 12.2951 9.96022 12.502 10.0784C12.5316 10.0784 12.5611 10.108 12.5611 10.1376C12.6202 10.6104 12.5316 11.0833 12.3247 11.4676Z" />
+                    </svg>
+                </a>
+                <a href="" class="contact-icon__person">
+                    <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.2298 0C10.9986 0 11.6151 0.615837 11.6151 1.38467C11.6151 2.1535 10.9986 2.77001 10.2298 2.77001C9.46093 2.77001 8.84509 2.1535 8.84509 1.38467C8.84509 0.615837 9.46093 0 10.2298 0Z" />
+                        <path
+                            d="M5.03187 2.73926L5.03593 6.29355C4.37319 6.19195 3.75714 6.07426 3.21449 5.9386C2.32625 5.71654 1.61551 5.44877 1.15507 5.17663C0.694634 4.90448 0.537109 4.65928 0.537109 4.49984C0.537109 4.39682 0.589773 4.26233 0.78186 4.08809C0.973948 3.91386 1.29421 3.72132 1.71962 3.54112C2.48011 3.21899 3.67863 2.95272 5.03187 2.73926Z" />
+                        <path
+                            d="M15.4211 2.73926C16.7759 2.95267 17.9767 3.2188 18.7381 3.54112C19.164 3.72139 19.4809 3.91374 19.6732 4.08809C19.8655 4.26244 19.9213 4.39676 19.9213 4.49984C19.9213 4.65928 19.7631 4.90448 19.3027 5.17663C18.8422 5.44877 18.1315 5.71654 17.2433 5.9386C16.7003 6.07432 16.0842 6.19191 15.4211 6.29355V2.73926Z" />
+                        <path
+                            d="M8.50042 3.80762H11.9601C11.9601 3.80762 12.2353 3.81102 12.4989 3.94284C12.7625 4.07465 12.9999 4.32458 12.9999 4.84476L12.9992 6.56208C12.12 6.62559 11.1922 6.66147 10.2299 6.66147C9.26685 6.66147 8.33903 6.62569 7.4592 6.56208L7.45989 4.84476C7.46015 4.32052 7.69726 4.07465 7.96089 3.94284C8.22453 3.81103 8.50042 3.80762 8.50042 3.80762Z" />
+                        <path
+                            d="M0.537109 5.60059C0.621117 5.66115 0.708859 5.72016 0.80282 5.7757C1.35837 6.10406 2.11771 6.37926 3.04614 6.61137C4.90301 7.07558 7.43357 7.35441 10.2291 7.35441C13.0246 7.35441 15.5559 7.07558 17.4127 6.61137C18.3412 6.37926 19.1005 6.10406 19.6561 5.7757C19.7501 5.72013 19.8377 5.66119 19.9218 5.60059V11.1649C19.9218 11.3244 19.7636 11.5696 19.3031 11.8417C18.8427 12.1139 18.132 12.3816 17.2437 12.6037C16.7713 12.7218 16.2453 12.8268 15.6806 12.9194L12.5367 10.1244C12.4752 10.07 12.3963 10.0396 12.3142 10.0379C12.2061 10.0354 12.1031 10.0838 12.0357 10.1684L10.8498 11.6497L8.41782 8.77558C8.34944 8.69461 8.24721 8.64903 8.14129 8.65254C8.04341 8.65581 7.95161 8.70076 7.88842 8.77558L4.43352 12.8593C4.00057 12.7815 3.58849 12.6972 3.21449 12.6037C2.32625 12.3816 1.61551 12.1139 1.15507 11.8417C0.694634 11.5696 0.537109 11.3244 0.537109 11.1649V5.60059Z" />
+                        <path
+                            d="M8.15403 9.53418L11.3493 13.3096C10.9821 13.3198 10.6099 13.3265 10.2317 13.3265C8.40451 13.3265 6.69796 13.2015 5.23325 12.9884L8.15403 9.53418Z" />
+                        <path
+                            d="M12.3511 10.8857L14.7844 13.0493C13.9885 13.1518 13.1316 13.2297 12.2253 13.2758L11.3079 12.1893L12.3511 10.8857Z" />
+                        <path
+                            d="M8.15121 13.9648C8.82255 13.9998 9.51705 14.0183 10.2296 14.0183C10.9416 14.0183 11.6357 13.9998 12.3066 13.9648L12.3073 16.9627C12.3074 17.4829 12.0699 17.7328 11.8063 17.8646C11.5426 17.9964 11.2674 17.9999 11.2674 17.9999H10.5744V15.5774H9.88205V17.9999H9.19242C9.19242 17.9999 8.91651 17.9964 8.65289 17.8646C8.38926 17.7328 8.15189 17.4829 8.15189 16.9627L8.15121 13.9648Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="" class="social-icon__facebook">
+                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 0H5.81818C4.85376 0 3.92883 0.421427 3.24688 1.17157C2.56493 1.92172 2.18182 2.93913 2.18182 4V6.4H0V9.6H2.18182V16H5.09091V9.6H7.27273L8 6.4H5.09091V4C5.09091 3.78783 5.16753 3.58434 5.30392 3.43431C5.44031 3.28429 5.6253 3.2 5.81818 3.2H8V0Z"
+                            fill="#FEFEFE" />
+                    </svg>
+                </a>
+                <a href="" class="social-icon__linkedin">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.788 5.05273C13.1281 5.05273 14.4132 5.58506 15.3608 6.53261C16.3083 7.48016 16.8407 8.76532 16.8407 10.1054V16.0001H13.4722V10.1054C13.4722 9.65867 13.2948 9.23029 12.9789 8.91444C12.6631 8.59859 12.2347 8.42115 11.788 8.42115C11.3414 8.42115 10.913 8.59859 10.5971 8.91444C10.2813 9.23029 10.1038 9.65867 10.1038 10.1054V16.0001H6.73541V10.1054C6.73541 8.76532 7.26774 7.48016 8.21529 6.53261C9.16284 5.58506 10.448 5.05273 11.788 5.05273Z"
+                            fill="white" />
+                        <path d="M3.36841 5.89453H0V15.9998H3.36841V5.89453Z" fill="white" />
+                        <path
+                            d="M1.68421 3.36841C2.61437 3.36841 3.36841 2.61437 3.36841 1.68421C3.36841 0.754045 2.61437 0 1.68421 0C0.754045 0 0 0.754045 0 1.68421C0 2.61437 0.754045 3.36841 1.68421 3.36841Z"
+                            fill="white" />
+                    </svg>
+                </a>
+                <a href="" class="social-icon__instagram">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.7021 1H4.56738C2.59717 1 1 2.59717 1 4.56738V11.7021C1 13.6724 2.59717 15.2695 4.56738 15.2695H11.7021C13.6724 15.2695 15.2695 13.6724 15.2695 11.7021V4.56738C15.2695 2.59717 13.6724 1 11.7021 1Z"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M10.9888 7.68529C11.0768 8.27908 10.9754 8.88551 10.6989 9.41833C10.4225 9.95116 9.98502 10.3832 9.44883 10.6531C8.91263 10.923 8.305 11.0169 7.71234 10.9216C7.11968 10.8262 6.57218 10.5464 6.14772 10.1219C5.72326 9.69746 5.44344 9.14997 5.34808 8.55731C5.25271 7.96465 5.34665 7.35701 5.61653 6.82082C5.88641 6.28463 6.31849 5.84719 6.85131 5.57072C7.38414 5.29424 7.99057 5.19282 8.58436 5.28087C9.19005 5.37069 9.75079 5.65292 10.1838 6.08589C10.6167 6.51886 10.899 7.0796 10.9888 7.68529Z"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </a>
+                <a href="" class="social-icon__youtube">
+                    <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.8997 3.348C21.7844 2.88753 21.5497 2.46563 21.2192 2.12491C20.8887 1.78419 20.4741 1.53673 20.0174 1.4075C18.3486 1 11.6733 1 11.6733 1C11.6733 1 4.99797 1 3.32914 1.44631C2.8724 1.57553 2.45784 1.823 2.12735 2.16372C1.79685 2.50444 1.56212 2.92634 1.44687 3.3868C1.14145 5.08042 0.992051 6.79849 1.00055 8.51941C0.989668 10.2533 1.13907 11.9844 1.44687 13.6908C1.57393 14.137 1.81392 14.5428 2.14364 14.8692C2.47337 15.1955 2.88169 15.4313 3.32914 15.5537C4.99797 16 11.6733 16 11.6733 16C11.6733 16 18.3486 16 20.0174 15.5537C20.4741 15.4245 20.8887 15.177 21.2192 14.8363C21.5497 14.4956 21.7844 14.0737 21.8997 13.6132C22.2027 11.9323 22.3521 10.2274 22.346 8.51941C22.3568 6.78553 22.2074 5.05436 21.8997 3.348Z"
+                            stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.49121 11.6921L15.0701 8.51938L9.49121 5.34668V11.6921Z" stroke="#FEFEFE"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="dc-nav" id="myTopnav">
+            <img src="./assets/images/K_R_Mangalam-logo.png" alt="logo" class="K_R_Mangalam-logo" />
+
+            <div class="dc-nav__listing">
+                <a href="#" class="dc-nav__listing--item">Academics</a>
+                <a href="#" class="dc-nav__listing--item">Admissions</a>
+                <a href="#" class="dc-nav__listing--item">Placements</a>
+                <a href="#" class="dc-nav__listing--item">Research</a>
+                <a href="#" class="dc-nav__listing--item">Life at KRMU</a>
+                <a href="#" class="dc-nav__listing--item">About Us</a>
+                <a href="javascript:void(0);" class="icon icon-close" id="close-icon">
+                    <i class="fa fa-times"></i>
+                </a>
+            </div>
+            <div class="dc-nav__btn-wrapper">
+                <a href="#" class="mb-2 mt-2 me-4 ms-4 btn-sm-red btn fw-bolder">All Programs</a>
+                <a href="#" class="mb-2 mt-2 btn-sm-red btn fw-bolder">Apply Now</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" id="toggle-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="kr-banner">
+        <div class="container">
+            <p>Discover the World of Possibilities At K.R. Mangalam where</p>
+            <h1>We Shape Futures</h1>
+        </div>
+    </section>
+
+    <section class="event">
+        <div class="d-flex flex-wrap justify-content-between position-relative">
+            <div class="event__discussion">
+                <div class="event__discussion__slider dots-style-1">
+                    <div>
+                        <h5 class="event__discussion__title">
+                            Group Discussion on Unplastic India
+                        </h5>
+                        <p class="event__discussion__date">
+                            19th September
+                        </p>
+                        <p class="event__discussion__desc">
+                            Management Society organized a group discussion on ‘Unplastic India’ for the students. The
+                            session was led by Dr. Deepika Chaudhary and Dr. Sarina Asif, who are experts in the field
+                            of communication and business etiquette.
+                        </p>
+                        <a href="" class="event__discussion__link">
+                            Read More
+                        </a>
+                    </div>
+
+                    <div>
+                        <h5 class="event__discussion__title">
+                            Group Discussion on Unplastic India
+                        </h5>
+                        <p class="event__discussion__date">
+                            19th September
+                        </p>
+                        <p class="event__discussion__desc">
+                            Management Society organized a group discussion on ‘Unplastic India’ for the students. The
+                            session was led by Dr. Deepika Chaudhary and Dr. Sarina Asif, who are experts in the field
+                            of communication and business etiquette.
+                        </p>
+                        <a href="" class="event__discussion__link">
+                            Read More
+                        </a>
+                    </div>
+
+                    <div>
+                        <h5 class="event__discussion__title">
+                            Group Discussion on Unplastic India
+                        </h5>
+                        <p class="event__discussion__date">
+                            19th September
+                        </p>
+                        <p class="event__discussion__desc">
+                            Management Society organized a group discussion on ‘Unplastic India’ for the students. The
+                            session was led by Dr. Deepika Chaudhary and Dr. Sarina Asif, who are experts in the field
+                            of communication and business etiquette.
+                        </p>
+                        <a href="" class="event__discussion__link">
+                            Read More
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="event__discussion__title">
+                            Group Discussion on Unplastic India
+                        </h5>
+                        <p class="event__discussion__date">
+                            19th September
+                        </p>
+                        <p class="event__discussion__desc">
+                            Management Society organized a group discussion on ‘Unplastic India’ for the students. The
+                            session was led by Dr. Deepika Chaudhary and Dr. Sarina Asif, who are experts in the field
+                            of communication and business etiquette.
+                        </p>
+                        <a href="" class="event__discussion__link">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="event__upcoming">
+                <h5 class="event__upcoming__title">
+                    Upcoming Events
+                </h5>
+                <ul class="list-unstyled event__upcoming__list">
+                    <li class="event__upcoming__list--item">
+                        <div class="item__info">
+                            <h6 class="item__title">
+                                Corem ipsum dolor
+                            </h6>
+                            <p class="item__desc">
+                                Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero
+                            </p>
+                        </div>
+                        <p class="item__date">
+                            20.07.2023
+                        </p>
+                    </li>
+                    <li class="event__upcoming__list--item">
+                        <div class="item__info">
+                            <h6 class="item__title">
+                                Corem ipsum dolor
+                            </h6>
+                            <p class="item__desc">
+                                Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero
+                            </p>
+                        </div>
+                        <p class="item__date">
+                            20.07.2023
+                        </p>
+                    </li>
+                    <li class="event__upcoming__list--item">
+                        <div class="item__info">
+                            <h6 class="item__title">
+                                Corem ipsum dolor
+                            </h6>
+                            <p class="item__desc">
+                                Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero
+                            </p>
+                        </div>
+                        <p class="item__date">
+                            20.07.2023
+                        </p>
+                    </li>
+                    <li class="event__upcoming__list--item">
+                        <div class="item__info">
+                            <h6 class="item__title">
+                                Corem ipsum dolor
+                            </h6>
+                            <p class="item__desc">
+                                Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero
+                            </p>
+                        </div>
+                        <p class="item__date">
+                            20.07.2023
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="university">
+        <h2 class="university__title fw-normal">Best University In Gurugram</h2>
+        <div class="university__box">
+            <div class="university__box--left">
+                <p class="university__box--left__info">K.R. Mangalam University is the Best University in Gurgaon,
+                    dedicated to nurturing the educational journey of ambitious students and encouraging their passions.
+                    We foster a culture of innovation and intellectual exploration, empowering students to generate
+                    fresh ideas and embark on a path of profound learning and personal growth. </p>
+            </div>
+            <div class="university__box--right">
+                <ul class="list-unstyled">
+                    <li>
+                        <img src="/assets/images/10+.png" alt="10+">
+                        <h3>10+</h3>
+                        <p>Years of Educational<br> Experience</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/10+.png" alt="10+">
+                        <h3>100+</h3>
+                        <p>Multidisciplinary <br>Programs</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/10+.png" alt="10+">
+                        <h3>500+</h3>
+                        <p>Companies Visited <br>for Placement</p>
+                    </li>
+                    <li>
+                        <img src="/assets/images/10+.png" alt="10+">
+                        <h3>10K</h3>
+                        <p>Alums <br>Worldwide</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="journey">
+        <div class="journey__box">
+            <div class="journey__box--info">
+                <h2>Your Journey to Excellence Begins Here</h2>
+                <p>Our approach to education is multidisciplinary, ensuring a comprehensive and balanced educational
+                    experience. We are the most credible University in Gurgaon that puts great emphasis on practical
+                    knowledge, industry exposure, and research-driven learning methodologies.</p>
+                <a href="#" class="btn-sm-white btn fw-bolder">Download Brochure</a>
+                <a href="#" class="btn-sm-white btn fw-bolder ms-3 ">Apply Now</a>
+
+            </div>
+            <div class="journey__box--listing">
+                <ul class="list-unstyled">
+                    <li class="fw-bold">
+                        <a href="">
+                            Undergraduate Programs
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24"
+                                fill="none">
+                                <path
+                                    d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM63.0607 13.0607C63.6465 12.4749 63.6465 11.5251 63.0607 10.9393L53.5147 1.3934C52.9289 0.807611 51.9792 0.807611 51.3934 1.3934C50.8076 1.97919 50.8076 2.92893 51.3934 3.51472L59.8787 12L51.3934 20.4853C50.8076 21.0711 50.8076 22.0208 51.3934 22.6066C51.9792 23.1924 52.9289 23.1924 53.5147 22.6066L63.0607 13.0607ZM2 13.5H62V10.5H2V13.5Z"
+                                    fill="#FEFEFE" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fw-bold">
+                        <a href="">
+                            Postgraduate Programs
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24"
+                                fill="none">
+                                <path
+                                    d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM63.0607 13.0607C63.6465 12.4749 63.6465 11.5251 63.0607 10.9393L53.5147 1.3934C52.9289 0.807611 51.9792 0.807611 51.3934 1.3934C50.8076 1.97919 50.8076 2.92893 51.3934 3.51472L59.8787 12L51.3934 20.4853C50.8076 21.0711 50.8076 22.0208 51.3934 22.6066C51.9792 23.1924 52.9289 23.1924 53.5147 22.6066L63.0607 13.0607ZM2 13.5H62V10.5H2V13.5Z"
+                                    fill="#FEFEFE" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fw-bold">
+                        <a href="">
+                            Doctoral Programs
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24"
+                                fill="none">
+                                <path
+                                    d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM63.0607 13.0607C63.6465 12.4749 63.6465 11.5251 63.0607 10.9393L53.5147 1.3934C52.9289 0.807611 51.9792 0.807611 51.3934 1.3934C50.8076 1.97919 50.8076 2.92893 51.3934 3.51472L59.8787 12L51.3934 20.4853C50.8076 21.0711 50.8076 22.0208 51.3934 22.6066C51.9792 23.1924 52.9289 23.1924 53.5147 22.6066L63.0607 13.0607ZM2 13.5H62V10.5H2V13.5Z"
+                                    fill="#FEFEFE" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fw-bold">
+                        <a href="">
+                            Diploma
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24"
+                                fill="none">
+                                <path
+                                    d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM63.0607 13.0607C63.6465 12.4749 63.6465 11.5251 63.0607 10.9393L53.5147 1.3934C52.9289 0.807611 51.9792 0.807611 51.3934 1.3934C50.8076 1.97919 50.8076 2.92893 51.3934 3.51472L59.8787 12L51.3934 20.4853C50.8076 21.0711 50.8076 22.0208 51.3934 22.6066C51.9792 23.1924 52.9289 23.1924 53.5147 22.6066L63.0607 13.0607ZM2 13.5H62V10.5H2V13.5Z"
+                                    fill="#FEFEFE" />
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="journey--bottom">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 mb-sm-4 mb-xs-4">
+                    <a href="">
+                        <img src="./assets/images/admission.png" alt="">
+                        <p>Admission Process</p>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 mb-sm-4 mb-xs-4">
+                    <a href="">
+                        <img src="./assets/images/freesturucture.png" alt="">
+                        <p>Fee Structure</p>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 mb-sm-4 mb-xs-4 ">
+                    <a href="">
+                        <img src="./assets/images/scholarship.png" alt="">
+                        <p>Scholarships</p>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 mb-sm-4 mb-xs-4">
+                    <a href="">
+                        <img src="./assets/images/finance.png" alt="">
+                        <p>Finance Assistance</p>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="career">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Ignite Your Future</p>
+                    <h3>Make the Defining Career Choice with Us!</h3>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="career__card">
+                                <h4 class="career__card__title">Talk to our career counselors now!</h4>
+                                <p class="career__card__desc">Porem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                                <a href="#" class="btn-sm-red btn fw-bolder career__card__link">Schedule a Call with
+                                    Counselor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="career__card">
+                                <h4 class="career__card__title">Evaluate yourself today by taking an online assessment
+                                </h4>
+                                <p class="career__card__desc">Porem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                                <a href="#" class="btn-sm-red btn fw-bolder career__card__link">Take Online
+                                    Assessment</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="closer-look">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <p>The parts that make KRMU whole</p>
+                    <h5>A closer look at Life at KRMU</h5>
+                </div>
+                <div class="col-md-6 col-sm-9">
+                    <p>K.R. Mangalam University encourages students to participate in extracurricular activities for
+                        overall growth and development. The University encourages student-centric bodies, cultural
+                        clubs, and sports cells that cater to diverse needs and interests. These platforms provide
+                        opportunities for students to explore their passion, develop leadership skills, and foster a
+                        sense of community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="unmissable-event">
+        <div class="unmissable-event__card-wrapper">
+            <div class="unmissable-event__card card-1">
+                <h6 class="card-1__subtitle">
+                    Elevate Your Campus Life
+                </h6>
+                <h3 class="card-1__title">
+                    Unmissable <span>Events </span> at KRMU!
+                </h3>
+                <p class="card-1__desc">
+                    Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                    aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra
+                </p>
+                <a href="" class="card-1__link">
+                    Know More
+                </a>
+            </div>
+            <div class="unmissable-event__card__img card-1__img">
+                <img class="img-fluid" src="assets/images/anthony-delanoix.png" alt="">
+            </div>
+        </div>
+        <div class="unmissable-event__card-wrapper">
+            <div class="unmissable-event__card card-2">
+                <h6 class="card-2__subtitle">
+                    Your Journey in a World-Class Campus
+                </h6>
+                <h3 class="card-2__title">
+                    Discover Next-Level <span>Infrastructure and Facilities </span> at KRMU
+                </h3>
+                <p class="card-2__desc">
+                    Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                    aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra
+                </p>
+                <a href="" class="card-2__link">
+                    Know More
+                </a>
+            </div>
+            <div class="unmissable-event__card__img card-2__img">
+                <img class="img-fluid" src="assets/images/krmu-next-level.png" alt="">
+            </div>
+        </div>
+
+        <div class="unmissable-event__card-wrapper">
+            <div class="unmissable-event__card card-3">
+                <h6 class="card-3__subtitle">
+                    Your Journey in a World-Class Campus
+                </h6>
+                <h3 class="card-3__title">
+                    Discover Next-Level <span>Infrastructure and Facilities </span> at KRMU
+                </h3>
+                <p class="card-3__desc">
+                    Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                    aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra
+                </p>
+                <a href="" class="card-3__link">
+                    Know More
+                </a>
+            </div>
+            <div class="unmissable-event__card__img card-3__img">
+                <img class="img-fluid" src="assets/images/clubs.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="student-info">
+        <div class="student-info__slider arrow-style-1">
+            <div>
+                <div class="student-info__card">
+                    <img class="student__img" src="assets/images/ujjwal-singh.png" alt="" />
+                    <div class="student-info__card__header">
+                        <h5 class="student__name">
+                            Ujjwal Singh
+                        </h5>
+                        <p class="student__degree">
+                            B.Tech ME 2014-19
+                        </p>
+                    </div>
+                </div>
+                <p class="student__desc">
+                    Hello everyone, I am Ujjwal; I am a level IV Engineer at Anglo-Eastern PVT ltd. I am an alumnus of
+                    K.R. Mangalam University. I graduated in 2019. I chose B.Tech ME as I was passionate about the
+                    subjects this course offered. I was already aware of the jobs offered after this degree. When I came
+                    to KRMU, I realized that Mechanical Engineering is such a vast topic that the opportunities are
+                    endless. I give credits to my professors & mentors as they never gave up on me even when I was
+                    confused & curious. With the help of management & my sheer will to become what I dreamed of years
+                    ago, it turned into reality. I believe that K.R. Mangalam university was one of the best decisions
+                    of my life.
+                </p>
+            </div>
+            <div>
+                <div class="student-info__card">
+                    <img class="student__img" src="assets/images/ujjwal-singh.png" alt="" />
+                    <div class="student-info__card__header">
+                        <h5 class="student__name">
+                            Ujjwal Singh
+                        </h5>
+                        <p class="student__degree">
+                            B.Tech ME 2014-19
+                        </p>
+                    </div>
+                </div>
+                <p class="student__desc">
+                    Hello everyone, I am Ujjwal; I am a level IV Engineer at Anglo-Eastern PVT ltd. I am an alumnus of
+                    K.R. Mangalam University. I graduated in 2019. I chose B.Tech ME as I was passionate about the
+                    subjects this course offered. I was already aware of the jobs offered after this degree. When I came
+                    to KRMU, I realized that Mechanical Engineering is such a vast topic that the opportunities are
+                    endless. I give credits to my professors & mentors as they never gave up on me even when I was
+                    confused & curious. With the help of management & my sheer will to become what I dreamed of years
+                    ago, it turned into reality. I believe that K.R. Mangalam university was one of the best decisions
+                    of my life.
+                </p>
+            </div>
+            <div>
+                <div class="student-info__card">
+                    <img class="student__img" src="assets/images/ujjwal-singh.png" alt="" />
+                    <div class="student-info__card__header">
+                        <h5 class="student__name">
+                            Ujjwal Singh
+                        </h5>
+                        <p class="student__degree">
+                            B.Tech ME 2014-19
+                        </p>
+                    </div>
+                </div>
+                <p class="student__desc">
+                    Hello everyone, I am Ujjwal; I am a level IV Engineer at Anglo-Eastern PVT ltd. I am an alumnus of
+                    K.R. Mangalam University. I graduated in 2019. I chose B.Tech ME as I was passionate about the
+                    subjects this course offered. I was already aware of the jobs offered after this degree. When I came
+                    to KRMU, I realized that Mechanical Engineering is such a vast topic that the opportunities are
+                    endless. I give credits to my professors & mentors as they never gave up on me even when I was
+                    confused & curious. With the help of management & my sheer will to become what I dreamed of years
+                    ago, it turned into reality. I believe that K.R. Mangalam university was one of the best decisions
+                    of my life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="placement">
+        <div class="container">
+            <div class="placement__box">
+                <div class="placement__box--info">
+                    <h3 class="placement__box--info__subtitle">Exceptional <span class="text-blue">Placements</span>
+                        <br>Awaits at KRMU
+                    </h3>
+                    <ul class="placement__box--info__usp-lists list-unstyled mb-0">
+                        <li>
+                            <h3 class="placement__box--info__usp-list-no">36 LPA </h3>
+
+                            <h6 class="placement__box--info__usp-list-lbl">Highest Package </h6>
+                        </li>
+                        <li>
+                            <h3 class="placement__box--info__usp-list-no">500+</h3>
+
+                            <h6 class="placement__box--info__usp-list-lbl">Campus Recruiters </h6>
+                        </li>
+                        <li>
+                            <h3 class="placement__box--info__usp-list-no">100%</h3>
+
+                            <h6 class="placement__box--info__usp-list-lbl">Placement </h6>
+                        </li>
+                        <li>
+                            <h3 class="placement__box--info__usp-list-no">10K+</h3>
+
+                            <h6 class="placement__box--info__usp-list-lbl">Alumni Base </h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="placement__box--client d-flex flex-wrap">
+                    <ul class="list-unstyled w-50 placement__box--client__listing">
+                        <li><img src="./assets/images/congnizant.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/deltax.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/siemens.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/tata.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/genpact.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/google.png" class="img-fluid" alt=""></li>
+                    </ul>
+                    <ul class="list-unstyled w-50 placement__box--client__listing-1">
+                        <li><img src="./assets/images/ibm.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/paytm.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/oyo.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/yes-bank.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/square-yard.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/decathlon.png" class="img-fluid" alt=""></li>
+                        <li><img src="./assets/images/hcl.png" class="img-fluid" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-campus">
+        <div class="best-campus__overlay">
+            <div class="container">
+                <h4>Explore one of the <br>Largest and Best Campus</h4>
+                <p>The University strives to provide a high quality of life for all students living in the campus
+                    hostel. The premises are spacious and well-ventilated, creating an upbeat and rejuvenating
+                    atmosphere. These rooms, which are fully furnished with comfortable beds, study tables, chairs,
+                    built-in cupboards, ceiling fans, lights, and central air conditioning, make students feel at home.
+                </p>
+                <a href="#" class="btn-sm-red btn fw-bolder">Schedule your visit to KRMU Campus</a>
+                <a href="#" class="btn-sm-red btn fw-bolder">Take 360 Virtual Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="research">
+        <div class="container">
+            <div class="research__box">
+                <div class="research__box--info">
+                    <h6 class="research__box--info__title">Dive Into</h6>
+                    <h3 class="research__box--info__subtitle">Pioneering <span
+                            class="text-blue d-inline-block">Research</span>Opportunities</h3>
+                    <p class="research__box--info__para">Innovation fuels discovery at the K.R. Mangalam University,
+                        contributed by maximum faculties and over 5000 undergraduates, postgraduates, and research
+                        scholars working in the multidisciplinary domains reflecting compliance with the United Nation’s
+                        Sustainable Development Goals (SDG) and uplifting Research Excellence Framework at the global
+                        level.</p>
+                    <ul>
+                        <li>
+                            <a href="" class="text-decoration-none">
+                                Patents
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-decoration-none">
+                                Center of Excellence
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-decoration-none">
+                                Innovation and Entrepreneurship
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="research__box--values">
+                    <ul class="research__box--values__usp-lists list-unstyled mb-0">
+                        <li>
+                            <div class="research__box--values__usp-list-no">85+</div>
+
+                            <div class="research__box--values__usp-list-lbl">Total number of Patents</div>
+                        </li>
+                        <li>
+                            <div class="research__box--values__usp-list-no">72+</div>
+
+                            <div class="research__box--values__usp-list-lbl">Number of PhD Awarded</div>
+                        </li>
+                        <li>
+                            <div class="research__box--values__usp-list-no">86L+</div>
+
+                            <div class="research__box--values__usp-list-lbl">Total amount of <br> consultancy grant
+                                awarded
+                            </div>
+                        </li>
+                        <li>
+                            <div class="research__box--values__usp-list-no">500+</div>
+
+                            <div class="research__box--values__usp-list-lbl">Total number of <br> publications, chapters
+                                <br> and
+                                books by university
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="growth">
+        <div class="growth__testimonial arrow-style-2">
+            <div class="growth__content">
+                <img class="growth__banner" src="./assets/images/growth.png" alt="">
+                <div class="growth__field">
+                    <h3>1953</h3>
+                    <p>K.R. Mangalam <br>SUMMER FIELDS</p>
+                </div>
+            </div>
+            <div class="growth__content">
+                <img class="growth__banner" src="./assets/images/growth.png" alt="">
+                <div class="growth__field">
+                    <h3>1953</h3>
+                    <p>K.R. Mangalam <br>SUMMER FIELDS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="footer__title">
+                        Explore
+                    </h5>
+                    <p class="footer__desc">
+                        Yorem ipsum dolor sit amet, consectetur adipiscing elit. Yorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p>
+                    <ul class="list-unstyled footer__menu">
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--item__link">
+                                About KRMU
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                    fill="none">
+                                    <path
+                                        d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                        fill="#0060AA" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--item__link">
+                                Browse Programs
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                    fill="none">
+                                    <path
+                                        d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                        fill="#0060AA" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--item__link">
+                                Placements
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                    fill="none">
+                                    <path
+                                        d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                        fill="#0060AA" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--item__link">
+                                Life at KRMU
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                    fill="none">
+                                    <path
+                                        d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                        fill="#0060AA" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer__title">
+                        Visit
+                    </h5>
+                    <p class="footer__desc">
+                        Yorem ipsum dolor sit amet, consectetur adipiscing elit. Yorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p>
+                    <ul class="list-unstyled footer__menu">
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--item__link">
+                                Schedule a campus visit
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                    fill="none">
+                                    <path
+                                        d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                        fill="#0060AA" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--item__link">
+                                Virtual campus tour
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                    fill="none">
+                                    <path
+                                        d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                        fill="#0060AA" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--item__link">
+                                Contact Us
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                    fill="none">
+                                    <path
+                                        d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                        fill="#0060AA" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer__title">
+                        Apply
+                    </h5>
+                    <p class="footer__desc">
+                        Yorem ipsum dolor sit amet, consectetur adipiscing elit. Yorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p>
+                    <div class="d-flex flex-wrap footer__menu__wrapper">
+                        <ul class="list-unstyled footer__menu">
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    Admissions
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    International Admissions
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    Admission Policies
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    KREE
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    Scholarship
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled footer__menu">
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    CUET Scholarship
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    Apply Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    FAQ 's
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    Schedule a campus visit
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__menu--item">
+                                <a href="" class="footer__menu--item__link">
+                                    Virtual campus tour
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="8" viewBox="0 0 18 8"
+                                        fill="none">
+                                        <path
+                                            d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                            fill="#0060AA" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    
+                    <img src="./assets/images/footer-logo.png" class="img-fluid footer__logo" alt="">
+                    <ul class="list-unstyled footer__contact__menu">
+                        <li class="footer__contact__menu--item">
+                            <i class="fa fa-map-marker fa-lg me-2" style="color: #0060aa;" aria-hidden="true"></i>
+
+                            <a class="footer__contact__menu--item__link text-decoration-none" href="#">
+                                Sohna Road, Gurugram, Haryana 122103
+                            </a>
+                        </li>
+                        <li class="footer__contact__menu--item">
+                            <i class="fa  fa-envelope fa-lg me-2" style="color: #0060aa;"></i>
+                            <a class="footer__contact__menu--item__link" href="#">
+                                welcome@krmangalam.edu.in
+                            </a>
+                        </li>
+                        <li class="footer__contact__menu--item">
+                            <i class="fa fa-phone-volume fa-lg me-2" style="color: #0060aa;"></i>
+                            <a class="footer__contact__menu--item__link" href="#">
+                                01148884888, 8800697010 - 15
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer__title">
+                        Quick Links:
+                    </h5>
+                    <ul class="list-unstyled footer__quick-menu">
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                About KRMU
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Browse Programs
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Placements
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Life at KRMU                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Library
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                LMS
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Blogs
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                KEIC
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Privacy Policy                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer__title">
+                        KRMU Campus
+                    </h5>
+                    
+                    <ul class="list-unstyled footer__quick-menu">
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Campus Facilities
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Student Clubs & Socities
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Student Testimonial
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                Edude Fiesta
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                KREE
+                            </a>
+                        </li>
+                        <li class="footer__quick-menu--item">
+                            <a class="footer__quick-menu--item__link" href="">
+                                KEIC
+                            </a>
+                        </li>
+                       
+                       
+                    </ul>
+                    
+                    <h5 class="footer__title">
+                        Follow Us
+                    </h5>
+                    <a class="footer__follow__link" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="footer__follow__link" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="footer__follow__link" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick slider JS -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

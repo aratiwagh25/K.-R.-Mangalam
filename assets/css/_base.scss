@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+html {
+	font-size: 12px;
+    @include breakpoint(extra-large-desktop-min){
+        font-size: 16px;
+    }
+    @include breakpoint(ipad-max){
+        font-size: 10px;
+    }
+}
+
+body {
+    font-size: 1rem;
+    font-family: $primary-font;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+p,ul,.row,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
